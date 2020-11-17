@@ -18,13 +18,6 @@ class RoleController extends Controller
         return response()->json($patient->toArray());
     }
 
-    public function store(Request $request, Role $role)
-    {
-        $role->fill($request->all())->save();
-
-        return $role;
-    }
-
     public function update(Request $request, Role $role)
     {
         $role->update($request->all());

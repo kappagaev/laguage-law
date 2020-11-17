@@ -15,6 +15,7 @@ class Role extends Model
 
     protected $fillable = [
         'title',
-        'user_id'
+        'can_approve_users',
+        'can_create_requests'
     ];
 }

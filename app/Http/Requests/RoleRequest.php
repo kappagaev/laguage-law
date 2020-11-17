@@ -25,7 +25,8 @@ class RoleRequest extends FormRequest
     {
         return [
             'title' => 'required|string',
-            'user_id' => 'required|integer'
+            'can_approve_users' => 'required|integer',
+            'can_create_requests' => 'required|integer'
         ];
     }
 }
