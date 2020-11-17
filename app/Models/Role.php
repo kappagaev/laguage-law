@@ -13,6 +13,11 @@ class Role extends Model
         'user'
     ];
 
+    public function users()
+    {
+        return $this->morphMany('User', 'role');
+    }
+
     protected $fillable = [
         'title',
         'can_approve_users',
