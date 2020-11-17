@@ -15,6 +15,11 @@ class User extends Model
 
     use HasFactory;
 
+    public function role()
+    {
+        return $this->belongsTo('Role');
+    }
+
     protected $fillable = [
         'first_name',
         'last_name',
