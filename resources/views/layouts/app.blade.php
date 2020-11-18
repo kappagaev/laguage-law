@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -39,4 +40,17 @@
 
         @livewireScripts
     </body>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@yield('title-block')</title>
+</head>
+<body>
+    @yield('content')
+
+</body>
+>>>>>>> 53f55dbeb6ab6eb3904ec1e1bcb5c68a09c40430
 </html>

@@ -19,6 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/logging', function () {
+    return view('layouts/logging');
+});
+
+Route::post('/loging/submit', function () {
+    return view('welcome');
+})->name('logging-form');
+
 Route::apiResource('user', UserController::class);
 
 Route::resource('request', \App\Http\Controllers\RequestController::class);

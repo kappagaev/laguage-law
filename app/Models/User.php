@@ -14,6 +14,7 @@ class User extends Authenticatable
 {
     use HasApiTokens;
     use HasFactory;
+
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
@@ -23,6 +24,13 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+
+    public function role()
+    {
+        return $this->morphTo('Role');
+    }
+
     protected $fillable = [
         'name',
         'email',
